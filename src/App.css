@@ -1,0 +1,277 @@
+/* src/App.css */
+
+/* Global Styles */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a default font */
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+h1 {
+  text-align: center; /* Center the main headings */
+}
+
+/* Recipe List Styles */
+.recipe-list {
+  padding: 20px; /* Padding for the recipe list */
+}
+
+.recipe-grid {
+  display: grid; /* Use grid layout for recipes */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px; /* Space between cards */
+  max-width: 1200px; /* Max width for the grid */
+  margin: 0 auto; /* Center the grid */
+}
+
+.recipe-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  overflow: hidden; /* Hide overflow */
+  text-align: center; /* Center text in the card */
+}
+
+.recipe-image {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.recipe-title {
+  font-size: 1.5em; /* Font size for titles */
+  margin: 10px 0; /* Margin around titles */
+}
+
+.know-more-btn {
+  background-color: #28a745; /* Green button background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.know-more-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex; /* Flex layout for pagination */
+  justify-content: center; /* Center pagination */
+  margin-top: 20px; /* Space above pagination */
+}
+
+.pagination button {
+  margin: 0 5px; /* Space between buttons */
+  padding: 10px; /* Padding for buttons */
+}
+
+/* Recipe Detail Styles */
+.recipe-detail-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the start */
+  padding: 20px; /* Padding around the container */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.recipe-detail-content {
+  background-color: #fff; /* White background for detail section */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Inner padding */
+  max-width: 800px; /* Max width for the detail card */
+  width: 100%; /* Full width */
+}
+
+.recipe-detail-title {
+  font-size: 2em; /* Larger title font size */
+  margin: 10px 0; /* Margin around title */
+  color: #333; /* Dark text color */
+}
+
+.recipe-detail-image {
+  width: 100%; /* Full width of the detail section */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for image */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.recipe-detail-info {
+  margin-top: 15px; /* Margin above detail info */
+}
+
+.recipe-detail-ingredients {
+  list-style-type: disc; /* Bulleted list for ingredients */
+  padding-left: 20px; /* Indent for list items */
+}
+
+.recipe-detail-instructions {
+  margin: 10px 0; /* Margin above and below instructions */
+}
+
+.recipe-detail-time,
+.recipe-detail-servings,
+.recipe-detail-difficulty,
+.recipe-detail-cuisine {
+  font-weight: bold; /* Bold text for values */
+}
+/* Add this to your existing CSS */
+
+/* Go Back Button Styles */
+.go-back-btn {
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 15px; /* Padding for the button */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.go-back-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+/* Add this to your existing CSS file */
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex; /* Aligns items in a row */
+  margin-bottom: 20px; /* Space below the search bar */
+}
+
+.search-input {
+  flex: 1; /* Take up available space */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.search-button {
+  padding: 10px 15px; /* Padding for the button */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 10px; /* Space between input and button */
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Landing page styles */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page {
+  text-align: center;
+  padding: 0; /* Remove padding from the landing page */
+}
+
+.landing-header {
+  background-color: rgba(0, 0, 0, 0.5);  color: white;
+  padding: 20px 0; /* Padding within the header for top and bottom space */
+  margin: 0; /* Remove any margin from the header */
+  width: 100%; /* Ensure the header spans full width */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+
+.landing-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust to your needs */
+}
+
+.landing-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.landing-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+
+.search-card {
+  background-color: #f0f4f8; /* Light color for search card */
+}
+
+.explore-card {
+  background-color: #f0f4f8; /* Light color for explore card */
+}
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipe-card {
+  width: 30%;
+  margin: 10px;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+}
+
+.explore-recipes-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:#4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-recipes-btn:hover {
+  background-color: blue;
+}
+
+.landing-footer {
+  background-color: rgba(0, 0, 0, 0.5);  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.landing-page {
+  text-align: center;
+  padding: 0; /* Remove padding from the landing page */
+  background-image: url('https://images.unsplash.com/photo-1605926637512-c8b131444a4b?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Set the background image */
+  background-size: cover; /* Make sure the image covers the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure the landing page takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between header, main, and footer */
+}
